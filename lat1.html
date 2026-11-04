@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelancongan Terengganu - Destinasi Menarik</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-content h3 {
+            color: #006699;
+            margin-bottom: 10px;
+        }
+        .card-content p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #003366;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Selamat Datang ke Terengganu</h1>
+        <p>Terokai Keindahan Pantai, Pulau, dan Warisan Kebudayaan</p>
+    </header>
+
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 30px; color: #003366;">Tempat Menarik Untuk Dilawati</h2>
+        
+        <div class="grid">
+            <!-- Tempat 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" alt="Pulau Redang">
+                <div class="card-content">
+                    <h3>Pulau Redang</h3>
+                    <p>Terkenal dengan air laut yang jernih, pantai berpasir putih, dan tapak snorkeling serta selam skuba yang memukau.</p>
+                </div>
+            </div>
+
+            <!-- Tempat 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=600&q=80" alt="Pasar Payang">
+                <div class="card-content">
+                    <h3>Pasar Besar Kedai Payang</h3>
+                    <p>Pusat jualan pelbagai barangan tradisi seperti kain batik, songket, keropok lekor, dan cenderamata khas Terengganu.</p>
+                </div>
+            </div>
+
+            <!-- Tempat 3 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=600&q=80" alt="Masjid Kristal">
+                <div class="card-content">
+                    <h3>Masjid Kristal & TTI</h3>
+                    <p>Terletak di Taman Tamadun Islam, masjid yang dibina daripada kaca dan keluli ini kelihatan berkilauan di tepi sungai.</p>
+                </div>
+            </div>
+
+            <!-- Tempat 4 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Tasik Kenyir">
+                <div class="card-content">
+                    <h3>Tasik Kenyir</h3>
+                    <p>Tasik buatan manusia terbesar di Asia Tenggara yang menawarkan aktiviti rumah bot, perkelahan air terjun, dan Santuari Kelah.</p>
+                </div>
+            </div>
+
+            <!-- Tempat 5 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Drawbridge Terengganu">
+                <div class="card-content">
+                    <h3>Jambatan Angkat (Drawbridge)</h3>
+                    <p>Jambatan angkat ikonik pertama di Asia Tenggara yang menjadi mercu tanda moden Kuala Terengganu.</p>
+                </div>
+            </div>
+
+            <!-- Tempat 6 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Pantai Teluk Ketapang">
+                <div class="card-content">
+                    <h3>Pantai Teluk Ketapang</h3>
+                    <p>Destinasi popular untuk bersantai sambil menikmati hidangan Celup Tepung (ICT) dan melihat kapal terbang mendarat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Pelancongan Terengganu. Dihoskan di GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
