@@ -1,0 +1,418 @@
+<!DOCTYPE html><html lang="ms"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Tentang Saya - UTM Faculty Scholar</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary-fixed-dim": "#ffba21",
+            "inverse-on-surface": "#f3f0ef",
+            "on-surface-variant": "#584143",
+            "surface-dim": "#dcd9d9",
+            "secondary-fixed": "#ffdea8",
+            "inverse-surface": "#313030",
+            "on-tertiary-fixed": "#001b3d",
+            "error-container": "#ffdad6",
+            "primary-container": "#7a0026",
+            "secondary-container": "#fdb714",
+            "background": "#fcf9f8",
+            "on-error-container": "#93000a",
+            "tertiary-container": "#163a6b",
+            "on-secondary": "#ffffff",
+            "outline-variant": "#dfbfc1",
+            "surface-container": "#f0eded",
+            "surface-container-low": "#f6f3f2",
+            "surface-tint": "#ad2e47",
+            "on-error": "#ffffff",
+            "on-tertiary-container": "#86a5dd",
+            "primary-fixed": "#ffdadc",
+            "surface": "#fcf9f8",
+            "on-primary-container": "#ff7b8d",
+            "on-tertiary-fixed-variant": "#254778",
+            "primary-fixed-dim": "#ffb2b9",
+            "on-primary-fixed-variant": "#8c1331",
+            "on-background": "#1c1b1b",
+            "on-primary-fixed": "#400010",
+            "surface-variant": "#e5e2e1",
+            "surface-bright": "#fcf9f8",
+            "primary": "#510016",
+            "on-secondary-fixed": "#271900",
+            "secondary": "#7c5800",
+            "surface-container-lowest": "#ffffff",
+            "outline": "#8b7172",
+            "inverse-primary": "#ffb2b9",
+            "surface-container-highest": "#e5e2e1",
+            "on-secondary-container": "#6b4b00",
+            "surface-container-high": "#eae7e7",
+            "on-primary": "#ffffff",
+            "on-surface": "#1c1b1b",
+            "error": "#ba1a1a",
+            "on-tertiary": "#ffffff",
+            "on-secondary-fixed-variant": "#5e4200",
+            "tertiary": "#00244e",
+            "tertiary-fixed-dim": "#a9c7ff",
+            "tertiary-fixed": "#d6e3ff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin": "2rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "margin-mobile": "1rem",
+            "gutter-mobile": "1rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Inter"],
+            "body-md": ["Inter"],
+            "display": ["Outfit"],
+            "body-lg": ["Inter"],
+            "label-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "headline-md": ["Outfit"],
+            "title-md": ["Inter"],
+            "headline-lg": ["Outfit"],
+            "headline-lg-mobile": ["Outfit"],
+            "headline-sm": ["Outfit"],
+            "display-mobile": ["Outfit"]
+          },
+          "fontSize": {
+            "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }],
+            "body-md": ["1rem", { "lineHeight": "1.625rem", "fontWeight": "400" }],
+            "display": ["3rem", { "lineHeight": "3.5rem", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "fontWeight": "400" }],
+            "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "label-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "500" }],
+            "headline-md": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-md": ["1.125rem", { "lineHeight": "1.625rem", "fontWeight": "600" }],
+            "headline-lg": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }],
+            "display-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.015em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopAppBar (Shared Component) -->
+<header class="bg-surface-container-lowest dark:bg-inverse-surface shadow-sm sticky top-0 z-50 transition-all duration-200 ease-in-out">
+<div class="flex justify-between items-center w-full px-space-lg md:px-margin max-w-7xl mx-auto py-3">
+<!-- Brand & Leading Icon -->
+<a class="flex items-center gap-space-sm group" href="index.html">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary text-2xl transition-transform group-hover:scale-105" data-icon="school">school</span>
+<span class="text-title-md font-title-md font-bold text-primary dark:text-inverse-primary tracking-tight">Guru Pendidikan Islam</span>
+</a>
+<!-- Desktop Navigation Links (Tentang Saya is ACTIVE) -->
+<nav class="hidden md:flex items-center gap-space-lg">
+<a class="text-on-surface-variant dark:text-inverse-on-surface font-medium hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 text-label-md font-label-md" href="index.html">Laman Utama</a>
+<a class="border-b-2 border-primary dark:border-inverse-primary text-primary dark:text-inverse-primary font-semibold pb-1 text-label-md font-label-md" href="about.html">Tentang Saya</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface font-medium hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 text-label-md font-label-md" href="resume.html">Resume</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface font-medium hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 text-label-md font-label-md" href="portfolio.html">Portfolio</a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center gap-space-md">
+<a class="inline-flex items-center justify-center bg-primary text-on-primary px-space-md py-1.5 rounded-lg text-label-md font-label-md hover:bg-primary-container transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary-fixed" href="contact.html">
+          Hubungi
+        </a>
+</div>
+</div>
+</header>
+<!-- Main Canvas Content -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-space-md md:px-margin py-space-xl">
+<!-- Hero / Profile Identity Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-space-xl items-start">
+<!-- Profile Visual & Meta Bento Card -->
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-lg rounded-xl border border-surface-container-high shadow-sm">
+<div class="relative mb-space-md overflow-hidden rounded-lg aspect-[4/5] bg-surface-container">
+<img class="w-full h-full object-cover rounded-lg" alt="Potret rasmi Fadzlin Syaamira Binti Che Omar, UTM Scholar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnrYV6-PiO4njNeGDU0wIburu0ZwjJQt482RNlQF561jUsYR3OCfvmsiHH6Zsf9py8zvFk6-1rUitD6QIKRqeEJTzF8NYEL-chh3gyUlg63TBclFKHmSUfwhTRFfT0Cgg4IkNvBSPDdbRO3qAexc7UaKb29MYKy7RbSzwAjp2FUeKYmAmZhQO-JEhW5FGLn8kdMnldE2MTZNf036gbAh85cDTYTKltQpDgJ2syWXZLLAA72d1AOgVL">
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md p-3 rounded-lg border border-outline-variant/30 flex items-center justify-between">
+<div>
+<p class="text-label-sm font-label-sm text-primary font-bold">Fadzlin Syaamira Binti Che Omar</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Guru Profesional &amp; Pendidik Pendidikan Islam</p>
+</div>
+<span class="inline-flex items-center justify-center px-2 py-0.5 rounded text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold">Aktif</span>
+</div>
+</div>
+<div class="space-y-space-sm"><div class="flex items-center gap-2 text-on-surface-variant text-body-sm font-body-sm"><span class="material-symbols-outlined text-primary text-lg" data-icon="location_on">location_on</span><span class="">Universiti Teknologi Malaysia, Skudai, Johor Bahru</span></div><div class="flex items-center gap-2 text-on-surface-variant text-body-sm font-body-sm"><span class="material-symbols-outlined text-primary text-lg" data-icon="mail">mail</span><span class="">fadzlinsyaamira@graduate.utm.my</span></div><div class="flex items-center gap-2 text-on-surface-variant text-body-sm font-body-sm"><span class="material-symbols-outlined text-primary text-lg" data-icon="domain">domain</span><span class="">Akademi Tamadun Islam, FSSH (UTM)</span></div></div>
+<!-- Academic Network Tags -->
+<div class="mt-space-md pt-space-md border-t border-surface-container-high flex flex-wrap gap-1.5"><span class="px-2.5 py-1 bg-surface-container-low text-on-surface text-label-sm font-label-sm rounded">Guru Pendidikan Islam</span><span class="px-2.5 py-1 bg-surface-container-low text-on-surface text-label-sm font-label-sm rounded">Pedagogi Berpusatkan Murid</span><span class="px-2.5 py-1 bg-surface-container-low text-on-surface text-label-sm font-label-sm rounded">Tarbiah &amp; Sahsiah</span><span class="px-2.5 py-1 bg-surface-container-low text-on-surface text-label-sm font-label-sm rounded">Modul Interaktif PdP</span></div>
+</div>
+<!-- Biodata Ringkas & Falsafah Kerjaya Content -->
+<div class="lg:col-span-8 flex flex-col gap-gutter"><!-- Biodata Overview Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl border border-surface-container-high shadow-sm">
+  <div class="flex items-center gap-2 mb-space-sm">
+    <span class="h-6 w-1 bg-primary rounded-full inline-block"></span>
+    <h1 class="text-headline-md font-headline-md text-primary">Profil Pendidik Profesional</h1>
+  </div>
+  <p class="text-body-lg font-body-lg text-on-surface leading-relaxed mb-space-md">
+    <strong class="text-primary font-semibold">Ustazah Fadzlin Syaamira Binti Che Omar</strong> merupakan seorang Guru Profesional dan Pendidik Pendidikan Islam yang berdedikasi tinggi, berwawasan dalam melahirkan murid yang bukan sahaja cemerlang dari segi intelek, malahan memiliki sahsiah diri yang terpuji dan penghayatan Islam yang teguh.
+  </p>
+  <p class="text-body-md font-body-md text-on-surface-variant leading-relaxed mb-space-md">
+    Berbekalkan pengalaman serta kepakaran dalam pengajaran kurikulum Pendidikan Islam di UTM dan sekolah, beliau menerapkan pendekatan pengajaran aktif yang memupuk rasa cinta murid terhadap ilmu wahyu. Menerusi penggabungan pedagogi moden, teknologi pendidikan interaktif, dan sentuhan tarbiah berhemah, suasana pembelajaran dijadikan lebih hidup, bermakna, dan dekat di hati setiap insan pelajar.
+  </p>
+  <!-- Nilai Teras Pendidik -->
+  <div class="pt-space-md border-t border-surface-container-high">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="material-symbols-outlined text-secondary text-xl" data-icon="loyalty">loyalty</span>
+      <h2 class="text-title-md font-title-md text-on-surface font-bold">Nilai Teras Pendidik</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+      <div class="p-3 rounded-lg bg-surface-container-low border border-surface-container-high flex items-start gap-2.5">
+        <span class="material-symbols-outlined text-primary text-xl mt-0.5" data-icon="favorite">favorite</span>
+        <div>
+          <p class="text-label-md font-label-md font-bold text-primary">Ikhlas &amp; Berintegriti</p>
+          <p class="text-body-sm font-body-sm text-on-surface-variant">Melaksanakan amanah pendidik dengan penuh keikhlasan kerana Allah SWT demi pembinaan ummah.</p>
+        </div>
+      </div>
+      <div class="p-3 rounded-lg bg-surface-container-low border border-surface-container-high flex items-start gap-2.5">
+        <span class="material-symbols-outlined text-primary text-xl mt-0.5" data-icon="groups">groups</span>
+        <div>
+          <p class="text-label-md font-label-md font-bold text-primary">Berpusatkan Murid</p>
+          <p class="text-body-sm font-body-sm text-on-surface-variant">Memahami kepelbagaian tahap pemikiran dan potensi individu murid melalui pembezaan instruksional.</p>
+        </div>
+      </div>
+      <div class="p-3 rounded-lg bg-surface-container-low border border-surface-container-high flex items-start gap-2.5">
+        <span class="material-symbols-outlined text-primary text-xl mt-0.5" data-icon="auto_awesome">auto_awesome</span>
+        <div>
+          <p class="text-label-md font-label-md font-bold text-primary">Kreatif &amp; Inovatif</p>
+          <p class="text-body-sm font-body-sm text-on-surface-variant">Mengaplikasikan pedagogi kreatif dan media interaktif digital bagi meningkatkan minat murid.</p>
+        </div>
+      </div>
+      <div class="p-3 rounded-lg bg-surface-container-low border border-surface-container-high flex items-start gap-2.5">
+        <span class="material-symbols-outlined text-primary text-xl mt-0.5" data-icon="volunteer_activism">volunteer_activism</span>
+        <div>
+          <p class="text-label-md font-label-md font-bold text-primary">Bimbingan &amp; Tarbiah</p>
+          <p class="text-body-sm font-body-sm text-on-surface-variant">Sentiasa mendampingi dan membentuk akhlak mulia menerusi teladan qudwah hasanah berterusan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Falsafah Pengajaran / Pendidikan Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl border-l-4 border-l-secondary-container border-y border-r border-surface-container-high shadow-sm relative overflow-hidden">
+  <div class="absolute -right-6 -bottom-6 opacity-5 pointer-events-none text-primary">
+    <span class="material-symbols-outlined text-9xl" data-icon="format_quote">format_quote</span>
+  </div>
+  <div class="flex items-center gap-2 mb-space-xs">
+    <span class="material-symbols-outlined text-secondary" data-icon="lightbulb">lightbulb</span>
+    <span class="text-label-md font-label-md text-secondary font-bold uppercase tracking-wider">Falsafah Pengajaran &amp; Pendidikan</span>
+  </div>
+  <blockquote class="text-headline-sm font-headline-sm text-primary mb-space-sm font-semibold italic">
+    “Mendidik dengan Hati: Mengintegrasikan Nilai Rabbani, Akhlak Terpuji, dan Pedagogi Berpusatkan Murid ke Arah Pembentukan Generasi Insan Kaffah”
+  </blockquote>
+  <p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+    Pendidikan Islam bukan sekadar penyampaian silibus, sebaliknya merupakan proses penyuburan rohani dan pemupukan adab yang menyeluruh. Guru bertindak sebagai murabbi dan pembimbing yang menjiwai keperluan setiap murid agar ilmu yang dipelajari menjadi panduan hidup yang berterusan.
+  </p>
+</div></div>
+</div>
+<!-- Latar Belakang Pendidikan Section -->
+<!-- Bidang Tugas & Pengajaran Section -->
+<section class="mb-space-xl">
+  <div class="flex items-center justify-between mb-space-lg border-b border-surface-container-high pb-3">
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-primary text-3xl" data-icon="menu_book">menu_book</span>
+      <h2 class="text-headline-md font-headline-md text-on-surface">Bidang Tugas &amp; Pengajaran</h2>
+    </div>
+    <span class="text-label-sm font-label-sm text-primary bg-primary/10 px-3 py-1 rounded font-semibold">Peranan Utama Pendidik</span>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+    <!-- Kurikulum Pendidikan Islam -->
+    <div class="bg-surface-container-lowest p-space-lg rounded-xl border border-surface-container-high shadow-sm hover:border-primary transition-all duration-200 flex flex-col justify-between relative group">
+      <div class="absolute top-0 left-0 h-1 w-full bg-primary rounded-t-xl"></div>
+      <div>
+        <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant/30 text-primary mb-space-md">
+          <span class="material-symbols-outlined text-2xl" data-icon="auto_stories">auto_stories</span>
+        </div>
+        <h3 class="text-title-md font-title-md text-primary font-bold mb-1">Pengajaran Kurikulum</h3>
+        <p class="text-label-md font-label-md text-on-surface font-semibold mb-2">Tilawah, Sirah, Akidah, Fiqh &amp; Akhlak</p>
+        <p class="text-body-sm font-body-sm text-on-surface-variant mb-space-md">Menyampaikan isi kandungan pengajaran secara komprehensif mengikut aras kefahaman murid dengan kaedah tadabbur, simulasi amali solat, dan penghayatan sirah nabawiyyah.</p>
+      </div>
+      <div class="pt-3 border-t border-surface-container-high flex items-center gap-1.5 text-label-sm font-label-sm text-secondary font-semibold">
+        <span class="material-symbols-outlined text-base" data-icon="verified">verified</span>
+        <span class="">Pelaksanaan Pengajaran Berkesan</span>
+      </div>
+    </div>
+    <!-- Penyelarasan Aktiviti Dakwah & Sahsiah -->
+    <div class="bg-surface-container-lowest p-space-lg rounded-xl border border-surface-container-high shadow-sm hover:border-primary transition-all duration-200 flex flex-col justify-between relative group">
+      <div class="absolute top-0 left-0 h-1 w-full bg-secondary-container rounded-t-xl"></div>
+      <div>
+        <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant/30 text-primary mb-space-md">
+          <span class="material-symbols-outlined text-2xl" data-icon="diversity_3">diversity_3</span>
+        </div>
+        <h3 class="text-title-md font-title-md text-primary font-bold mb-1">Aktiviti Dakwah &amp; Sahsiah</h3>
+        <p class="text-label-md font-label-md text-on-surface font-semibold mb-2">Penyelarasan Sahsiah &amp; Bina Insan</p>
+        <p class="text-body-sm font-body-sm text-on-surface-variant mb-space-md">Menggerakkan program penghayatan Islam, usrah pelajar, kem kepimpinan sahsiah, sambutan kebesaran Islam, serta amalan tazkirah dan solat berjemaah di sekolah.</p>
+      </div>
+      <div class="pt-3 border-t border-surface-container-high flex items-center gap-1.5 text-label-sm font-label-sm text-secondary font-semibold">
+        <span class="material-symbols-outlined text-base" data-icon="check_circle">check_circle</span>
+        <span class="">Bimbingan Qudwah Hasanah</span>
+      </div>
+    </div>
+    <!-- Pembangunan Modul & Lembaran Interaktif -->
+    <div class="bg-surface-container-lowest p-space-lg rounded-xl border border-surface-container-high shadow-sm hover:border-primary transition-all duration-200 flex flex-col justify-between relative group">
+      <div class="absolute top-0 left-0 h-1 w-full bg-secondary-fixed rounded-t-xl"></div>
+      <div>
+        <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant/30 text-primary mb-space-md">
+          <span class="material-symbols-outlined text-2xl" data-icon="devices">devices</span>
+        </div>
+        <h3 class="text-title-md font-title-md text-primary font-bold mb-1">Pembangunan Modul Interaktif</h3>
+        <p class="text-label-md font-label-md text-on-surface font-semibold mb-2">Inovasi Bahan Bantu Mengajar (BBM)</p>
+        <p class="text-body-sm font-body-sm text-on-surface-variant mb-space-md">Merekabentuk modul pembelajaran digital, infografik ringkas, kuiz gamifikasi, dan lembaran kerja interaktif yang mesra murid untuk memudahkan pemahaman tajuk-tajuk sukar.</p>
+      </div>
+      <div class="pt-3 border-t border-surface-container-high flex items-center gap-1.5 text-label-sm font-label-sm text-secondary font-semibold">
+        <span class="material-symbols-outlined text-base" data-icon="stars">stars</span>
+        <span class="">Inovasi Pedagogi Digital</span>
+      </div>
+    </div>
+  </div>
+</section><section class="mb-space-xl">
+  <div class="flex items-center justify-between mb-space-lg border-b border-surface-container-high pb-3">
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-primary text-3xl" data-icon="co_present">co_present</span>
+      <h2 class="text-headline-md font-headline-md text-on-surface">Pengalaman Mengajar &amp; Praktikal</h2>
+    </div>
+    <span class="text-label-sm font-label-sm text-primary bg-primary/10 px-3 py-1 rounded font-semibold">Pengalaman Lapangan Sebenar</span>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+    <!-- SMK Damai Jaya -->
+    <div class="bg-surface-container-lowest p-space-lg rounded-xl border border-surface-container-high shadow-sm hover:border-primary transition-all duration-200 flex flex-col justify-between relative group">
+      <div class="absolute top-0 left-0 h-1 w-full bg-primary rounded-t-xl"></div>
+      <div>
+        <div class="flex justify-between items-start mb-space-md">
+          <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant/30 text-primary">
+            <span class="material-symbols-outlined text-2xl" data-icon="school">school</span>
+          </div>
+          <span class="px-2.5 py-1 rounded-full bg-primary/10 text-primary font-bold text-label-sm font-label-sm">Mac 2026 – Jun 2026</span>
+        </div>
+        <h3 class="text-title-md font-title-md text-primary font-bold mb-1">Guru Praktikal (Latihan Mengajar)</h3>
+        <p class="text-label-md font-label-md text-on-surface font-semibold mb-2">SMK Damai Jaya, Skudai</p>
+        <p class="text-body-sm font-body-sm text-on-surface-variant mb-space-md">Mengendalikan pengajaran dan pembelajaran (PdP) mata pelajaran Pendidikan Islam sekolah menengah dengan pendekatan pedagogi berpusatkan murid, modul interaktif, serta penghayatan amali solat dan sirah.</p>
+      </div>
+      <div class="pt-3 border-t border-surface-container-high flex items-center gap-1.5 text-label-sm font-label-sm text-secondary font-semibold">
+        <span class="material-symbols-outlined text-base" data-icon="verified">verified</span>
+        <span class="">Latihan Profesional Keguruan</span>
+      </div>
+    </div>
+    <!-- Tadika Dzul Iman Smart Khalifah -->
+    <div class="bg-surface-container-lowest p-space-lg rounded-xl border border-surface-container-high shadow-sm hover:border-primary transition-all duration-200 flex flex-col justify-between relative group">
+      <div class="absolute top-0 left-0 h-1 w-full bg-secondary-container rounded-t-xl"></div>
+      <div>
+        <div class="flex justify-between items-start mb-space-md">
+          <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant/30 text-primary">
+            <span class="material-symbols-outlined text-2xl" data-icon="child_care">child_care</span>
+          </div>
+          <span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-bold text-label-sm font-label-sm">Jun 2023 – Sep 2023</span>
+        </div>
+        <h3 class="text-title-md font-title-md text-primary font-bold mb-1">Pendidik Awal Kanak-Kanak</h3>
+        <p class="text-label-md font-label-md text-on-surface font-semibold mb-2">Tadika Dzul Iman Smart Khalifah</p>
+        <p class="text-body-sm font-body-sm text-on-surface-variant mb-space-md">Membimbing asas fardu ain, hafazan surah lazim, adab harian, dan pembinaan sahsiah awal kanak-kanak melalui kaedah didaktik santai, stimulasi audio-visual, dan aktiviti amali ceria.</p>
+      </div>
+      <div class="pt-3 border-t border-surface-container-high flex items-center gap-1.5 text-label-sm font-label-sm text-secondary font-semibold">
+        <span class="material-symbols-outlined text-base" data-icon="stars">stars</span>
+        <span class="">Asas Tarbiah &amp; Sahsiah Awal</span>
+      </div>
+    </div>
+  </div>
+</section><section class="mb-space-xl">
+<div class="flex items-center justify-between mb-space-lg border-b border-surface-container-high pb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="history_edu">history_edu</span>
+<h2 class="text-headline-md font-headline-md text-on-surface">Latar Belakang Pendidikan</h2>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded">Kelayakan Diiktiraf</span>
+</div>
+<!-- Kad Terperinci Pendidikan (CV Timeline & Cards) -->
+<div class="grid grid-cols-1 gap-gutter sm:grid-cols-2">
+<!-- PhD Card -->
+
+<!-- Master's Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl border border-surface-container-high shadow-sm hover:border-primary transition-all duration-200 flex flex-col justify-between relative group"><div class="absolute top-0 left-0 h-1 w-full bg-primary/70 rounded-t-xl"></div><div><div class="flex justify-between items-start mb-space-md"><div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant/30 text-primary"><span class="material-symbols-outlined text-2xl" data-icon="school">school</span></div><span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-bold text-label-sm font-label-sm">2018 – 2022</span></div><h3 class="text-title-md font-title-md text-primary font-bold mb-1">Sarjana Muda Pendidikan (Pengajian Islam)</h3><p class="text-label-md font-label-md text-on-surface font-semibold mb-2">Universiti Teknologi Malaysia (UTM)</p><p class="text-body-sm font-body-sm text-on-surface-variant mb-space-md">Pengkhususan dalam Pedagogi Pengajian Islam, Pengurusan Kurikulum dan Kaedah Pengajaran Berkesan.</p></div><div class="pt-3 border-t border-surface-container-high flex items-center gap-1.5 text-label-sm font-label-sm text-secondary font-semibold"><span class="material-symbols-outlined text-base" data-icon="check_circle">check_circle</span><span class="">Graduan Berprestasi Cemerlang</span></div></div>
+<!-- Bachelor's Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl border border-surface-container-high shadow-sm hover:border-primary transition-all duration-200 flex flex-col justify-between relative group"><div class="absolute top-0 left-0 h-1 w-full bg-secondary-container rounded-t-xl"></div><div><div class="flex justify-between items-start mb-space-md"><div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant/30 text-primary"><span class="material-symbols-outlined text-2xl" data-icon="menu_book">menu_book</span></div><span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-bold text-label-sm font-label-sm">2022</span></div><h3 class="text-title-md font-title-md text-primary font-bold mb-1">Sijil Tinggi Persekolahan Malaysia (STPM)</h3><p class="text-label-md font-label-md text-on-surface font-semibold mb-2">Aliran Sains Sosial (Agama)</p><p class="text-body-sm font-body-sm text-on-surface-variant mb-space-md">Pencapaian cemerlang PNGK 3.17 (Purata Nilai Gred Kumulatif 3.17) dalam pengkhususan bidang pengajian Islam dan sains sosial.</p></div><div class="pt-3 border-t border-surface-container-high flex items-center gap-1.5 text-label-sm font-label-sm text-secondary font-semibold"><span class="material-symbols-outlined text-base" data-icon="stars">stars</span><span class="">Pencapaian PNGK 3.17</span></div></div>
+</div>
+</section>
+<!-- Anugerah & Pencapaian Utama Section -->
+<section>
+<div class="flex items-center justify-between mb-space-lg border-b border-surface-container-high pb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-3xl" data-icon="military_tech" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<h2 class="text-headline-md font-headline-md text-on-surface">Anugerah &amp; Pencapaian Utama</h2>
+</div>
+<span class="text-label-sm font-label-sm text-secondary-container font-semibold">Pengiktirafan Kebangsaan &amp; Antarabangsa</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter"><div class="bg-surface-container-lowest p-space-lg rounded-xl border-2 border-secondary-container shadow-sm hover:shadow-md transition-shadow relative">
+  <div class="flex items-start gap-space-md">
+    <div class="p-3 bg-[#FFF8E6] border border-[#F3AF00] rounded-xl flex-shrink-0 text-[#8C6500]">
+      <span class="material-symbols-outlined text-3xl" data-icon="public" style="font-variation-settings: 'FILL' 1;">public</span>
+    </div>
+    <div>
+      <span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-secondary-container text-on-secondary-container font-bold mb-1 inline-block">Tahun 2024 • Antarabangsa</span>
+      <h3 class="text-title-md font-title-md text-on-surface font-bold leading-snug">International Young Future Leaders Summit (iYFLS) 2024</h3>
+      <p class="text-label-md font-label-md text-primary font-semibold mb-2">Sidang Kemuncak Kepimpinan Belia Antarabangsa</p>
+      <p class="text-body-sm font-body-sm text-on-surface-variant">Penyertaan sidang kemuncak kepimpinan belia antarabangsa yang mengiktiraf potensi kepimpinan masa hadapan dan peranan pemerkasaan belia Islamik.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-primary dark:bg-primary-container border-t-2 border-secondary-container dark:border-secondary-fixed mt-space-xl">
+<div class="w-full px-space-lg md:px-margin py-space-xl max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-space-md">
+<div>
+<span class="text-headline-sm font-headline-sm font-bold text-on-primary dark:text-on-primary-container">Fadzlin Syaamira | Pendidik Profesional</span>
+<p class="text-body-sm font-body-sm text-on-primary/80 dark:text-on-primary-container/80 mt-1">Guru &amp; Pendidik Profesional Bidang Pendidikan Pengajian Islam, Universiti Teknologi Malaysia (UTM) Skudai.</p>
+</div>
+<div class="flex flex-wrap gap-x-space-md gap-y-2">
+<a class="text-on-primary/80 dark:text-on-primary-container/80 text-body-sm font-body-sm hover:text-secondary-fixed transition-colors" href="index.html">Laman Utama</a>
+<a class="text-secondary-fixed font-semibold underline text-body-sm font-body-sm" href="about.html">Tentang Saya</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 text-body-sm font-body-sm hover:text-secondary-fixed transition-colors" href="resume.html">Resume</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 text-body-sm font-body-sm hover:text-secondary-fixed transition-colors" href="portfolio.html">Portfolio</a>
+
+
+<a class="text-on-primary/80 dark:text-on-primary-container/80 text-body-sm font-body-sm hover:text-secondary-fixed transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank">GitHub</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 text-body-sm font-body-sm hover:text-secondary-fixed transition-colors" href="contact.html">Hubungi</a>
+</div>
+</div>
+<div class="pt-space-md border-t border-on-primary/20 flex flex-col sm:flex-row justify-between items-center text-body-sm font-body-sm text-on-primary/80 dark:text-on-primary-container/80">
+<p class="">© 2025 Fadzlin Syaamira Binti Che Omar • Universiti Teknologi Malaysia (UTM). Hak Cipta Terpelihara.</p>
+<p class="text-label-sm font-label-sm mt-2 sm:mt-0 text-secondary-fixed-dim">Inovatif • Ekuiti • Ketahanan</p>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+</body></html>
